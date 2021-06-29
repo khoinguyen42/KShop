@@ -1,0 +1,8 @@
+﻿@model IEnumerable<KShop.Models.THELOAI>
+
+<ul class="sub-menu">
+    @foreach (var item in Model)
+    {
+        <li><a class="list-group-item" href="@Url.Action("Sptheotl","KShop", new { id=item.MaTL})">@item.TenTheLoai</a></li>
+    }
+</ul>
